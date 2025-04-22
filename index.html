@@ -16,30 +16,41 @@
                     <th>Предмет</th>
                     <th>Вид Занятия</th>
                     <th>Преподаватель</th>
+                    <th>Действия</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="schedule-body">
                 <tr>
                     <td>11:50 - 13:20</td>
                     <td>Разработка кода информационных систем</td>
                     <td>Лекция</td>
                     <td>Куликовская А.А.</td>
+                    <td><button onclick="removeClass(this)">Удалить</button></td>
                 </tr>
                 <tr>
                     <td>13:50</td>
                     <td>Технология разработки программного обеспечения</td>
                     <td>Зачёт</td>
                     <td>Красильников А.В.</td>
+                    <td><button onclick="removeClass(this)">Удалить</button></td>
                 </tr>
                 <tr>
                     <td>13:50 - 15:20</td>
                     <td>Технология разработки программного обеспечения</td>
                     <td>Лабораторный практикум</td>
                     <td>Красильников А.В.</td>
+                    <td><button onclick="removeClass(this)">Удалить</button></td>
                 </tr>
             </tbody>
         </table>
+        <h2>Добавить занятие</h2>
+        <form id="add-class-form">
+            <input type="text" id="time" placeholder="Время" required>
+            <input type="text" id="subject" placeholder="Предмет" required>
+            <input type="text" id="teacher" placeholder="Учитель" required>
+            <button type="submit">Добавить занятие</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html>]
